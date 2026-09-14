@@ -5,7 +5,9 @@ Interactive **agentic RAG investigation** for the 180DC ML recruitment task.
 An unsigned letter names Dr Bauerstein. Chapters **XII–XIII** of Agatha Christie’s *The Mysterious Affair at Styles* (Gutenberg #863, public domain) are **sealed** — they never enter the retriever. You check the tip against the file, **lock a name**, then unseal the prosecution Investigator and the adversarial Fact-Checker. You leave with a **jury docket**, not a toast.
 
 - **GitHub:** https://github.com/shreevarnasrao/sealed-styles-court
-- **Live URL:** _Render deploy in progress_
+- **Live URL:** click Deploy to Render, add `OPENAI_API_KEY`, then replace this line with the `*.onrender.com` URL
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https://github.com/shreevarnasrao/sealed-styles-court)
 
 **This is an independent recruitment demo, not a court.** The planted letter (`DOC-ANON-TIP`) is rumour. Agents may run on heuristics if no LLM key is set.
 
