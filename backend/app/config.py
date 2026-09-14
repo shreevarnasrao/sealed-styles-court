@@ -13,9 +13,19 @@ PROCESSED = DATA / "processed"
 SEALED = DATA / "sealed"
 ONTOLOGY = DATA / "ontology" / "styles.yaml"
 
-LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
 LLM_API_KEY = os.getenv("GROQ_API_KEY") or os.getenv("LLM_API_KEY") or os.getenv("OPENAI_API_KEY") or ""
-LLM_MODEL = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile")
+if os.getenv("LLM_BASE_URL"):
+    LLM_BASE_URL = os.getenv("LLM_BASE_URL")
+elif os.getenv("GROQ_API_KEY") and not os.getenv("OPENAI_API_KEY"):
+    LLM_BASE_URL = "https://api.groq.com/openai/v1"
+else:
+    LLM_BASE_URL = "https://api.openai.com/v1"
+if os.getenv("LLM_MODEL"):
+    LLM_MODEL = os.getenv("LLM_MODEL")
+elif "openai.com" in LLM_BASE_URL:
+    LLM_MODEL = "gpt-4o"
+else:
+    LLM_MODEL = "llama-3.3-70b-versatile"
 MAX_RETRIES = int(os.getenv("INVESTIGATOR_MAX_RETRIES", "3"))
 UNVERIFIED_CONFIDENCE_CAP = 0.45
 SUPPORT_THRESHOLD = 0.35

@@ -4,7 +4,8 @@ Interactive **agentic RAG investigation** for the 180DC ML recruitment task.
 
 An unsigned letter names Dr Bauerstein. Chapters **XII–XIII** of Agatha Christie’s *The Mysterious Affair at Styles* (Gutenberg #863, public domain) are **sealed** — they never enter the retriever. You check the tip against the file, **lock a name**, then unseal the prosecution Investigator and the adversarial Fact-Checker. You leave with a **jury docket**, not a toast.
 
-Live URL: _pending deploy — paste GROQ_API_KEY + GitHub access, then this line is filled_
+- **GitHub:** https://github.com/shreevarnasrao/sealed-styles-court
+- **Live URL:** _Render deploy in progress_
 
 **This is an independent recruitment demo, not a court.** The planted letter (`DOC-ANON-TIP`) is rumour. Agents may run on heuristics if no LLM key is set.
 

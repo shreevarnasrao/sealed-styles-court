@@ -5,11 +5,11 @@ services:
     plan: free
     healthCheckPath: /health
     envVars:
-      - key: GROQ_API_KEY
+      - key: OPENAI_API_KEY
         sync: false
       - key: LLM_BASE_URL
-        value: https://api.groq.com/openai/v1
+        value: https://api.openai.com/v1
       - key: LLM_MODEL
-        value: llama-3.3-70b-versatile
+        value: gpt-4o
       - key: PYTHONPATH
         value: /app/backend
