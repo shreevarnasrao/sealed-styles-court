@@ -1,0 +1,12 @@
+.venv
+venv
+tmp
+tests
+docs
+.git
+.pytest_cache
+3d-cnn-geometric-shapes
+frontend/node_modules
+.env
+*.pyc
+__pycache__
