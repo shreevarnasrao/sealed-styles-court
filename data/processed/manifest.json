@@ -1,0 +1,41 @@
+{
+  "case_id": "styles_court",
+  "document_count": 12,
+  "chunk_count": 410,
+  "sealed_document_ids": [
+    "DOC-CH12",
+    "DOC-CH13"
+  ],
+  "unverified_document_ids": [
+    "DOC-ANON-TIP"
+  ],
+  "indexed_document_ids": [
+    "DOC-CH01",
+    "DOC-CH02",
+    "DOC-CH03",
+    "DOC-CH04",
+    "DOC-CH05",
+    "DOC-CH06",
+    "DOC-CH07",
+    "DOC-CH08",
+    "DOC-CH09",
+    "DOC-CH10",
+    "DOC-CH11",
+    "DOC-ANON-TIP"
+  ],
+  "suspect_ids": [
+    "alfred_inglethorp",
+    "evelyn_howard",
+    "john_cavendish",
+    "mary_cavendish",
+    "lawrence_cavendish",
+    "cynthia_murdoch",
+    "dr_bauerstein"
+  ],
+  "extraction": {
+    "method": "ingest_text",
+    "people": 40,
+    "places": 5,
+    "objects": 7
+  }
+}

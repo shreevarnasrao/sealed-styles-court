@@ -1,0 +1,9 @@
+{
+  "case_id": "styles_court",
+  "primary_suspect_id": "alfred_inglethorp",
+  "accomplice_id": "evelyn_howard",
+  "accepted_suspect_ids": ["alfred_inglethorp", "evelyn_howard"],
+  "canonical_evidence_ids": ["DOC-CH05", "DOC-CH08", "DOC-CH04", "DOC-CH02"],
+  "scoring_notes": "Full credit if either accepted suspect is named; mention accomplice in notes only as a hint that a second person may be involved, never the method.",
+  "private_method": "Do not expose via any API. Delayed strychnine in the evening medicine; bromide mixture caused precipitation so the last dose was fatal. Alfred Inglethorp and Evelyn Howard acted together."
+}

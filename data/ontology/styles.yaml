@@ -1,0 +1,110 @@
+case_id: styles_court
+title: The Mysterious Affair at Styles
+setting: Styles Court, Essex, July 1916
+victim:
+  id: emily_inglethorp
+  name: Emily Inglethorp
+  aliases:
+    - Mrs. Inglethorp
+    - Mrs Inglethorp
+    - Emily Inglethorp
+    - the mater
+    - Mrs. Cavendish
+
+suspects:
+  - id: alfred_inglethorp
+    name: Alfred Inglethorp
+    aliases: [Alfred Inglethorp, Mr. Inglethorp, Mr Inglethorp]
+    motive_public: Recently married the victim; stands to inherit.
+  - id: evelyn_howard
+    name: Evelyn Howard
+    aliases: [Evelyn Howard, Miss Howard, Evie]
+    motive_public: Companion who quarrelled with the victim and left the house.
+  - id: john_cavendish
+    name: John Cavendish
+    aliases: [John Cavendish, John]
+    motive_public: Stepson; Styles and income revert toward him on her death.
+  - id: mary_cavendish
+    name: Mary Cavendish
+    aliases: [Mary Cavendish, Mary]
+    motive_public: John's wife; strained marriage; seen in the garden at night.
+  - id: lawrence_cavendish
+    name: Lawrence Cavendish
+    aliases: [Lawrence Cavendish, Lawrence]
+    motive_public: Younger stepson; medical training; access to poisons.
+  - id: cynthia_murdoch
+    name: Cynthia Murdoch
+    aliases: [Cynthia Murdoch, Cynthia, Miss Murdoch]
+    motive_public: Protégée who works at the Red Cross Hospital dispensary.
+  - id: dr_bauerstein
+    name: Dr Bauerstein
+    aliases: [Dr. Bauerstein, Dr Bauerstein, Bauerstein, the doctor]
+    motive_public: London specialist staying nearby; seen near the house at night.
+
+other_people:
+  - id: arthur_hastings
+    name: Arthur Hastings
+    aliases: [Hastings, Arthur Hastings, Captain Hastings]
+  - id: hercule_poirot
+    name: Hercule Poirot
+    aliases: [Poirot, Hercule Poirot, Monsieur Poirot]
+  - id: dorcas
+    name: Dorcas
+    aliases: [Dorcas]
+  - id: annie
+    name: Annie
+    aliases: [Annie]
+  - id: inspector_japp
+    name: Inspector Japp
+    aliases: [Japp, Inspector Japp]
+
+places:
+  - {id: styles_court, name: Styles Court, aliases: [Styles, Styles Court, the house]}
+  - {id: victim_bedroom, name: Mrs Inglethorp's bedroom, aliases: [Mrs. Inglethorp's room, her bedroom]}
+  - {id: dispensary, name: Hospital dispensary, aliases: [dispensary, Red Cross Hospital]}
+  - {id: village, name: Styles St. Mary, aliases: [Styles St. Mary, the village]}
+  - {id: london, name: London, aliases: [London]}
+
+objects:
+  - {id: cocoa, name: Cocoa, aliases: [cocoa, the cocoa]}
+  - {id: strychnine, name: Strychnine, aliases: [strychnine, nux vomica]}
+  - {id: will, name: Will, aliases: [will, the will, new will]}
+  - {id: despatch_case, name: Despatch case, aliases: [despatch-case, despatch case]}
+  - {id: bromide, name: Bromide powders, aliases: [bromide, bromide powders]}
+  - {id: coffee, name: Coffee, aliases: [coffee]}
+  - {id: salt, name: Salt, aliases: [salt]}
+
+key_times:
+  - {id: july_16, label: 16 July 1916, aliases: [16th of July, 16th July, July 16]}
+  - {id: july_17, label: 17 July 1916, aliases: [17th of July, 17th July, July 17, the night of the tragedy]}
+
+key_events:
+  - id: quarrel_howard
+    label: Miss Howard quarrels with Mrs Inglethorp and leaves
+    actors: [evelyn_howard, emily_inglethorp]
+    time: july_16
+    place: styles_court
+  - id: cocoa_evening
+    label: Cocoa taken to Mrs Inglethorp in the evening
+    actors: [emily_inglethorp]
+    time: july_17
+    place: victim_bedroom
+    objects: [cocoa]
+  - id: death
+    label: Mrs Inglethorp dies in convulsions
+    actors: [emily_inglethorp]
+    time: july_17
+    place: victim_bedroom
+    objects: [strychnine]
+  - id: inquest
+    label: Coroner's inquest
+    time: after_death
+    place: village
+  - id: bauerstein_arrest
+    label: Dr Bauerstein arrested
+    actors: [dr_bauerstein]
+    time: after_inquest
+  - id: john_trial
+    label: John Cavendish tried for murder
+    actors: [john_cavendish]
+    time: two_months_later
